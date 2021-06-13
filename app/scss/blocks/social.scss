@@ -1,0 +1,91 @@
+.social__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 43px;
+}
+
+.social__item {
+  display: inline-block;
+
+  text-decoration: none;
+
+  &--tlg {
+    span {
+      width: 22px;
+      height: 20px;
+
+      background: url("../../images/dest/icons/telegram.svg") no-repeat center;
+    }
+
+    &:hover {
+      span {
+        background: url("../../images/dest/icons/telegram--hover.svg") no-repeat
+          center;
+      }
+    }
+  }
+
+  &--vk {
+    span {
+      width: 23px;
+      height: 12px;
+
+      background: url("../../images/dest/icons/vk.svg") no-repeat center;
+    }
+
+    &:hover {
+      span {
+        background: url("../../images/dest/icons/vk--hover.svg") no-repeat
+          center;
+      }
+    }
+  }
+
+  &--inst {
+    span {
+      width: 20px;
+      height: 20px;
+
+      background: url("../../images/dest/icons/insta.svg") no-repeat center;
+    }
+
+    &:hover {
+      span {
+        background: url("../../images/dest/icons/insta--hover.svg") no-repeat
+          center;
+      }
+    }
+  }
+
+  &--yt {
+    span {
+      width: 20px;
+      height: 15px;
+
+      background: url("../../images/dest/icons/youtube.svg") no-repeat center;
+    }
+
+    &:hover {
+      span {
+        background: url("../../images/dest/icons/youtube--hover.svg") no-repeat
+          center;
+      }
+    }
+  }
+
+  span {
+    display: inline-block;
+
+    transition: all 0.2s linear;
+  }
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}
+
+@media (max-width: $mobile-sm) {
+}

@@ -1,26 +1,47 @@
 // USER VARIABLES SECTION
 
-$text: #000;
+$black: #353535;
+$gray: #f3f2ee;
+$dark_blue: #496778;
+$light_blue: #166693;
+$light_blue-hover: #1175ad;
+$gradient: linear-gradient(
+  90deg,
+  rgba(22, 102, 147, 0.95) 0%,
+  rgba(0, 143, 223, 0.95) 100%
+);
 
 // Max-width
-$tablet: 1199px;
-$mobile: 767px;
-$mobile-sm: 375px;
+$tablet: 992px;
+$mobile: 768px;
+$mobile-sm: 576px;
 
 // FONTS LOAD SECTION
-@mixin font($fname, $fstyle, $fweight, $furl) {
+@mixin font($fname, $fstyle, $fweight, $furl, $format) {
   @font-face {
     font-family: $fname;
     font-style: $fstyle;
     font-weight: $fweight;
-    src: local($fname), url($furl) format("woff2");
+    src: local($fname), url($furl) format($format);
     // font-display: swap; // Uncomment to initially display system fonts
   }
 }
 
-@include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
-@include font("Roboto", italic, 400, "../fonts/roboto-italic-webfont.woff2");
-@include font("Roboto", normal, 700, "../fonts/roboto-bold-webfont.woff2");
+@include font("Roboto", normal, 300, "../fonts/Roboto-Light.ttf", "truetype");
+@include font("Roboto", italic, 400, "../fonts/Roboto-Regular.ttf", "truetype");
+@include font("Roboto", normal, 700, "../fonts/Roboto-Bold.ttf", "truetype");
+
+@include font(
+  "Yanone Kaffeesatz",
+  normal,
+  400,
+  "../fonts/YanoneKaffeesatz-Regular.otf",
+  "otf"
+);
+
+@include font("Oswald", normal, 300, "../fonts/Oswald-Light.ttf", "truetype");
+@include font("Oswald", normal, 400, "../fonts/Oswald-Regular.ttf", "truetype");
+@include font("Oswald", normal, 500, "../fonts/Oswald-Medium.ttf", "truetype");
 
 .no-xl {
   display: none;

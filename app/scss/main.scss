@@ -1,20 +1,28 @@
 @import "config";
 @import "reset";
+@import "ui";
+@import "./blocks/header.scss";
+@import "./blocks/social.scss";
 
 body {
   font-family: "Roboto";
+  font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 82.9%;
-  color: $text;
+  font-size: 15px;
+  line-height: 100%;
+
   position: relative;
+
   overflow-x: hidden;
+
   min-width: 320px;
+
+  color: $dark_blue;
 }
 
 .container {
   width: 100%;
-  max-width: 1230px;
+  max-width: 1130px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -23,4 +31,7 @@ body {
 }
 
 @media (max-width: $mobile) {
+}
+
+@media (max-width: $mobile-sm) {
 }
