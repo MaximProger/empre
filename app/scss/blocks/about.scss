@@ -1,0 +1,35 @@
+.about {
+  position: relative;
+
+  padding: 135px 0;
+}
+
+.about__text__wrapper {
+  margin-bottom: 78px;
+  max-width: 710px;
+  width: 100%;
+}
+
+.about__text {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}
+
+@media (max-width: $mobile-sm) {
+}

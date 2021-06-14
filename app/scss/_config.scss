@@ -39,6 +39,13 @@ $mobile-sm: 576px;
   "opentype"
 );
 
+@include font(
+  "Oswald",
+  normal,
+  200,
+  "../fonts/Oswald-ExtraLight.ttf",
+  "truetype"
+);
 @include font("Oswald", normal, 300, "../fonts/Oswald-Light.ttf", "truetype");
 @include font("Oswald", normal, 400, "../fonts/Oswald-Regular.ttf", "truetype");
 @include font("Oswald", normal, 500, "../fonts/Oswald-Medium.ttf", "truetype");

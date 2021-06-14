@@ -1,4 +1,33 @@
 .btn {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 287px;
+  height: 60px;
+
+  text-decoration: none;
+  transition: all 0.2s linear;
+
+  color: #587281;
+  border: 1px solid #587281;
+
+  &:hover {
+    background: #587281;
+    border-color: #587281;
+    color: #fff;
+  }
+
+  &--white {
+    color: #fff;
+    border-color: #fff;
+  }
 }
 
 .logo {
@@ -35,6 +64,84 @@
 
 .bold {
   font-weight: bold;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.down__btn {
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  z-index: 2;
+
+  cursor: pointer;
+  transform: translate(-50%);
+  transition: all 0.2s linear;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.icon__btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+
+  cursor: pointer;
+  transform: translate(0, -50%);
+  transition: all 0.2s linear;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+
+  background: $light_blue;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    background: $light_blue-hover;
+  }
+}
+
+.title {
+  font-family: Yanone Kaffeesatz;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 83px;
+
+  position: relative;
+
+  margin-bottom: 65px;
+  padding-left: 20px;
+
+  color: $dark_blue;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    height: 87px;
+    width: 3px;
+
+    content: "";
+    transform: translateY(-50%);
+
+    background: $gradient;
+  }
+
+  &--small {
+    font-size: 50px;
+    line-height: 59px;
+  }
 }
 
 @media (max-width: $tablet) {
