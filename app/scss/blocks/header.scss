@@ -26,6 +26,11 @@
   }
 }
 
+.header__burger {
+  position: relative;
+  z-index: 10;
+}
+
 .header__burger__icon {
   display: block;
 }
@@ -183,86 +188,6 @@
 
 .header__bot {
   background: $light_blue;
-}
-
-.nav__list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.nav__item {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 188px;
-  height: 61px;
-
-  transition: all 0.2s linear;
-
-  border-right: 1px solid #115479;
-  border-left: 1px solid #267eaf;
-  color: #fff;
-
-  &:first-child {
-    position: relative;
-
-    border-left: 1px solid #115479;
-
-    &::before {
-      position: absolute;
-      left: 0;
-      top: 0;
-
-      width: 1px;
-      height: 100%;
-
-      content: "";
-
-      background: #267eaf;
-    }
-  }
-
-  &:last-child {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      right: 0;
-      top: 0;
-
-      width: 1px;
-      height: 100%;
-
-      content: "";
-
-      background: #267eaf;
-    }
-  }
-
-  &:hover {
-    background: $light_blue-hover;
-  }
-}
-
-.nav__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  height: 100%;
-
-  text-decoration: none;
-
-  color: #fff;
 }
 
 @media (max-width: $tablet) {

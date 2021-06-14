@@ -9,6 +9,9 @@
 	<!-- Slick -->
 	<!-- <link rel="stylesheet" href="./css/include/slick.css"> -->
 
+	<!-- Bootstrap Grid -->
+	<link rel="stylesheet" href="./css/include/bootstrap-grid.min.css">
+
 	<!-- Styles -->
 	<link rel="stylesheet" href="./css/app.min.css">
 	<title>Главная</title>
@@ -19,7 +22,7 @@
 	<header class="header" id="header">
 		<div class="header__top">
 			<div class="header__top__inner">
-				<button type="button" class="header__top__btn header__burger">
+				<button type="button" class="header__top__btn header__burger" id="burgerBtn">
 					<img width="16" height="15" src="./images/dest/icons/burger.svg" alt="burger" class="header__burger__icon">
 				</button>
 				<div class="header__top__right">
@@ -65,12 +68,15 @@
 					<div class="header__mid__left">
 						<a href="#" class="logo">
 							<img class="logo__icon" width="79" height="80" src="./images/dest/logo.svg" alt="empr">
-							<img height="53" width="211" src="./images/dest/logo__text.svg" alt="empr" class="logo__text">
+
+							<div class="logo__content">
+								<img height="53" width="211" src="./images/dest/logo__text.svg" alt="empr" class="logo__text">
+
+								<h2 class="logo__title">
+									Научно-производственное предприятие<br> электромонтажных и пусконаладочных работ
+								</h2>
+							</div>
 						</a>
-
-						<div class="header__mid__title">
-
-						</div>
 
 					</div>
 
@@ -93,23 +99,129 @@
 				<nav class="nav">
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a href="#" class="nav__link">
+							<span class="nav__link">
 								Продукция
+							</span>
+
+							<div class="nav__menu">
+								<div class="nav__menu__inner">
+									<div class="nav__menu__line">
+										<div class="nav__menu__line__wrapper row">
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Проектирование<br> электротехнического оборудования
+												</a>
+											</div>
+
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Ретрофит (модернизация)<br> существующих электроустановок
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="nav__menu__line">
+										<div class="nav__menu__line__wrapper row">
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Изготовление<br>
+													электрооборудования
+												</a>
+											</div>
+
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Металлообработка
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="nav__menu__line">
+										<div class="nav__menu__line__wrapper row">
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Электромонтажные и<br> пусконаладочные работы
+												</a>
+											</div>
+
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Электроника
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav__item">
+							<span href="#" class="nav__link">
+								Услуги
+							</span>
+
+							<div class="nav__menu">
+								<div class="nav__menu__inner">
+									<div class="nav__menu__line">
+										<div class="nav__menu__line__wrapper row">
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Проектирование<br> электротехнического оборудования
+												</a>
+											</div>
+
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Ретрофит (модернизация)<br> существующих электроустановок
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="nav__menu__line">
+										<div class="nav__menu__line__wrapper row">
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Изготовление<br>
+													электрооборудования
+												</a>
+											</div>
+
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Металлообработка
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="nav__menu__line">
+										<div class="nav__menu__line__wrapper row">
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Электромонтажные и<br> пусконаладочные работы
+												</a>
+											</div>
+
+											<div class="nav__menu__col col-6">
+												<a href="#" class="nav__menu__link">
+													Электроника
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								О компании
 							</a>
 						</li>
 						<li class="nav__item">
 							<a href="#" class="nav__link">
-								Продукция
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link">
-								Продукция
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link">
-								Продукция
+								Контакты
 							</a>
 						</li>
 					</ul>
@@ -119,12 +231,496 @@
 	</header>
 
 	<main class="main">
+		<div class="container">
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+		</div>
+
+		<div class="container">
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+		</div>
+
+		<div class="container">
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+		</div>
+
+		<div class="container">
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nisi cumque voluptatum assumenda, velit iste
+				possimus reiciendis at minus. Sint aperiam aut dicta numquam possimus, voluptatum eius necessitatibus alias
+				ipsam.</p>
+		</div>
 	</main>
 
 	<footer class="footer" id="footer">
 		<div class="container">
 		</div>
 	</footer>
+
+	<div class="menu">
+		<div class="menu__wrapper">
+			<div class="menu__head">
+				<button class="menu__close" type="button" id="closeMenu">
+					<img width="22" height="22" src="./images/dest/icons/close.svg" alt="x">
+				</button>
+			</div>
+			<div class="menu__body">
+				<div class="menu__body__wrapper row">
+					<div class="menu__body__col col-6">
+						<h2 class="menu__body__title">
+							Продукция
+						</h2>
+						<div class="menu__body__inner row">
+							<div class="menu__body__inner__col col-6">
+								<div class="menu__body__nav__wrapper">
+									<nav class="menu__body__nav">
+										<h3 class="menu__body__nav__title">
+											РУ 0,4 кВ
+										</h3>
+										<ul class="menu__body__nav__list">
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ПР</span> (пункты распределительные)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ШРЭ</span> (шкафы распределения электроэнергии)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ВРУ</span> (вводно-распределительные устройства)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ЩО</span> (щитки освещения)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ЩАО</span> (щитки аварийного освещения)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ШУ</span> (шкафы управления)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">РУСМ</span> (ящики управления электродвигателями)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ЩА</span> (щитки автоматики)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ПУ</span> (пункты управления)
+												</a>
+											</li>
+										</ul>
+									</nav>
+
+									<nav class="menu__body__nav">
+										<h3 class="menu__body__nav__title">
+											РУ 6-10 кВ
+										</h3>
+										<ul class="menu__body__nav__list menu__body__nav__list--margin">
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">КСО</span><br>
+													(камеры сборные одностороннего обслуживания)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">КРУ</span><br>
+													(комплектные распределительные устройства)
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+
+							<div class="menu__body__inner__col col-6">
+								<div class="menu__body__nav__wrapper">
+									<nav class="menu__body__nav">
+										<h3 class="menu__body__nav__title">
+											КТП
+										</h3>
+										<ul class="menu__body__nav__list">
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">Комплектные<br>
+														трансформаторные<br>
+														подстанции</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+
+									<nav class="menu__body__nav">
+										<h3 class="menu__body__nav__title">
+											ПКУ
+										</h3>
+										<ul class="menu__body__nav__list menu__body__nav__list--margin">
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">Пункты коммерческого учёта</span>
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">Реклоузеры</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+
+									<nav class="menu__body__nav">
+										<h3 class="menu__body__nav__title">
+											Электроника
+										</h3>
+										<ul class="menu__body__nav__list">
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">Электроника</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="menu__body__col col-6">
+
+
+						<div class="menu__body__inner row">
+							<div class="menu__body__inner__col col-6">
+
+								<h2 class="menu__body__title">
+									Услуги
+								</h2>
+
+								<div class="menu__body__nav__wrapper">
+									<nav class="menu__body__nav">
+										<h3 class="menu__body__nav__title">
+											РУ 0,4 кВ
+										</h3>
+										<ul class="menu__body__nav__list">
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ПР</span> (пункты распределительные)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ШРЭ</span> (шкафы распределения электроэнергии)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ВРУ</span> (вводно-распределительные устройства)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ЩО</span> (щитки освещения)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ЩАО</span> (щитки аварийного освещения)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ШУ</span> (шкафы управления)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">РУСМ</span> (ящики управления электродвигателями)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ЩА</span> (щитки автоматики)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">ПУ</span> (пункты управления)
+												</a>
+											</li>
+										</ul>
+									</nav>
+
+									<nav class="menu__body__nav">
+										<h3 class="menu__body__nav__title">
+											РУ 6-10 кВ
+										</h3>
+										<ul class="menu__body__nav__list menu__body__nav__list--margin">
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">КСО</span><br>
+													(камеры сборные одностороннего обслуживания)
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">КРУ</span><br>
+													(комплектные распределительные устройства)
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+
+							</div>
+
+							<div class="menu__body__inner__col col-6">
+
+								<h2 class="menu__body__title">
+									О компании
+								</h2>
+
+								<div class="menu__body__nav__wrapper">
+									<nav class="menu__body__nav">
+										<h3 class="menu__body__nav__title">
+											КТП
+										</h3>
+										<ul class="menu__body__nav__list">
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">Комплектные<br>
+														трансформаторные<br>
+														подстанции</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+
+									<nav class="menu__body__nav">
+										<h3 class="menu__body__nav__title">
+											ПКУ
+										</h3>
+										<ul class="menu__body__nav__list menu__body__nav__list--margin">
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">Пункты коммерческого учёта</span>
+												</a>
+											</li>
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">Реклоузеры</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+
+									<nav class="menu__body__nav">
+										<h3 class="menu__body__nav__title">
+											Электроника
+										</h3>
+										<ul class="menu__body__nav__list">
+											<li class="menu__body__nav__item">
+												<a href="#" class="menu__body__nav__link">
+													<span class="bold">Электроника</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- jQuery -->
 	<script src="./js/include/jquery.min.js"></script>
