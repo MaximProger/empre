@@ -39,20 +39,43 @@ $(document).ready(function () {
     }
   });
 
-  $("#certificatesSlider").not(".slick-initialized").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    infinite: true,
-    centerMode: false,
-    autoplay: false,
+  $("#certificatesSlider")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      centerMode: false,
+      autoplay: false,
+      prevArrow: $("#certificatesArrowPrev"),
+      nextArrow: $("#certificatesArrowNext"),
+      asNavFor: "#certificatesNav",
+    });
+
+  $("#certificatesNav").not(".slick-initialized").slick({
     arrows: false,
-    // asNavFor: "#introNav",
+    slidesToShow: 5,
+    asNavFor: "#certificatesSlider",
+    focusOnSelect: true,
   });
 
-  // $("#introNav").not(".slick-initialized").slick({
-  //   arrows: false,
-  //   slidesToShow: 6,
-  //   asNavFor: "#introSlider",
-  //   focusOnSelect: true,
-  // });
+  $("#partnersSlider")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      centerMode: false,
+      autoplay: false,
+      prevArrow: $("#partnersArrowPrev"),
+      nextArrow: $("#partnersArrowNext"),
+      asNavFor: "#partnersNav",
+    });
+
+  $("#partnersNav").not(".slick-initialized").slick({
+    arrows: false,
+    slidesToShow: 5,
+    asNavFor: "#partnersSlider",
+    focusOnSelect: true,
+  });
 });

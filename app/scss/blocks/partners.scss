@@ -1,0 +1,26 @@
+.partners {
+  padding-top: 61px;
+  padding-bottom: 55px;
+
+  background: url("../../images/dest/partners__bg.png") no-repeat center;
+  background-size: cover;
+}
+
+.partners__line {
+  padding: 0 15px;
+}
+
+.partners__line__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}
+
+@media (max-width: $mobile-sm) {
+}
