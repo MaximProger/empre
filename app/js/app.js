@@ -62,7 +62,7 @@ $(document).ready(function () {
   $("#partnersSlider")
     .not(".slick-initialized")
     .slick({
-      slidesToShow: 1,
+      slidesToShow: 4,
       slidesToScroll: 1,
       infinite: true,
       centerMode: false,

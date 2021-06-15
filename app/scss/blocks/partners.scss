@@ -6,14 +6,20 @@
   background-size: cover;
 }
 
-.partners__line {
-  padding: 0 15px;
-}
+.partners__slider {
+  .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.partners__line__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25%;
+  }
 }
 
 @media (max-width: $tablet) {
