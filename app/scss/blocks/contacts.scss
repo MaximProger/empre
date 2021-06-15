@@ -1,0 +1,104 @@
+.contacts {
+  position: relative;
+
+  padding-top: 81px;
+  padding-bottom: 121px;
+
+  background: #485d70;
+}
+
+.contacts__inner {
+  position: relative;
+  z-index: 3;
+}
+
+.contacts__box {
+  margin-bottom: 37px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__box__title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  position: relative;
+
+  margin-bottom: 26px;
+
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+
+    width: 100%;
+    height: 1px;
+
+    content: "";
+
+    background: #008fdf;
+  }
+}
+
+.contacts__box__line {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contacts__box__left {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 100%;
+
+  color: #ffffff;
+}
+
+.contacts__box__right {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  color: #ffffff;
+}
+
+.contacts__box__mail {
+  display: inline-block;
+
+  margin-bottom: 15px;
+}
+
+.contacts__triangle {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 699px;
+  height: 100%;
+
+  background: url("../../images/dest/triangle.svg") no-repeat center;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}
+
+@media (max-width: $mobile-sm) {
+}

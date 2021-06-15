@@ -1,0 +1,96 @@
+.footer {
+  padding-top: 58px;
+  padding-bottom: 43px;
+
+  background: #f3f2ee;
+  border: 1px solid #d8dadb;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer__logo {
+  display: inline-block;
+
+  margin-top: 6px;
+  margin-right: 30px;
+
+  text-decoration: none;
+}
+
+.footer__text__wrapper {
+  margin-bottom: 32px;
+}
+
+.footer__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 100%;
+
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #587281;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer__nav__item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__nav__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 100%;
+
+  text-decoration: none;
+  transition: all 0.2s linear;
+
+  color: #587281;
+
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-color: #587281;
+  }
+
+  &--special {
+    pointer-events: none;
+  }
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}
+
+@media (max-width: $mobile-sm) {
+}
