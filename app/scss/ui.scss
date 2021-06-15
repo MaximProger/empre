@@ -66,8 +66,12 @@
   font-weight: bold;
 }
 
+.scroll {
+  overflow-y: scroll;
+}
+
 .noscroll {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .down__btn {
@@ -264,6 +268,21 @@
   img {
     margin-right: 9px;
   }
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: alpha(opacity=75);
+  -moz-opacity: 0.75;
+  -khtml-opacity: 0.75;
+  opacity: 0.75;
+  z-index: 99;
 }
 
 @media (max-width: $tablet) {

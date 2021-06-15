@@ -282,8 +282,11 @@ textarea {
 .bold {
   font-weight: 700;
 }
+.scroll {
+  overflow-y: scroll;
+}
 .noscroll {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .down__btn {
   position: absolute;
@@ -497,6 +500,18 @@ textarea {
 }
 .chat__bth__content img {
   margin-right: 9px;
+}
+#overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  -moz-opacity: 0.75;
+  -khtml-opacity: 0.75;
+  opacity: 0.75;
+  z-index: 99;
 }
 .header__top {
   background: #f3f2ee;
@@ -855,6 +870,10 @@ textarea {
 .nav__item:hover {
   background: #1175ad;
 }
+.nav__item:hover .nav__menu {
+  visibility: visible;
+  opacity: 1;
+}
 .nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,9 +894,13 @@ textarea {
   top: 61px;
   left: 0;
   z-index: 7;
-  display: none;
+  visibility: hidden;
   width: 629px;
   padding: 20px 20px 27px 24px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
   background: -webkit-gradient(
     linear,
     left top,

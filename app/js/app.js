@@ -1,20 +1,30 @@
 $(document).ready(function () {
-  $(".nav__item").hover(function () {
-    $(this).find(".nav__menu").slideToggle();
-  });
+  function overlay(show) {
+    if (show) {
+      // --------------------------------------
+      var top = $(window).scrollTop();
+      var left = $(window).scrollLeft();
+      $(window).scroll(function () {
+        $(this).scrollTop(top).scrollLeft(left);
+      });
+      // --------------------------------------
+    } else {
+      // --------------------------------------
+      $(window).unbind("scroll");
+      // --------------------------------------
+    }
+  }
 
   $("#burgerBtn").click((evt) => {
     evt.preventDefault();
-    // menu.fadeIn();
     $("#menu").addClass("menu--show");
-    $("html").addClass("noscroll");
+    overlay(true);
   });
 
   $("#closeMenu").click((evt) => {
     evt.preventDefault();
-    // $("#menu").fadeOut();
     $("#menu").removeClass("menu--show");
-    $("html").removeClass("noscroll");
+    overlay(false);
   });
 
   $(document).mouseup(function (e) {
@@ -25,17 +35,15 @@ $(document).ready(function () {
       menu.has(e.target).length === 0
     ) {
       // и не по его дочерним элементам
-      // menu.fadeOut(); // скрываем его
       menu.removeClass("menu--show");
-      $("html").removeClass("noscroll");
+      overlay(false);
     }
   });
 
   $(document).keydown((evt) => {
     if (evt.keyCode == 27) {
-      // $("#menu").fadeOut();
       $("#menu").removeClass("menu--show");
-      $("html").removeClass("noscroll");
+      overlay(false);
     }
   });
 
