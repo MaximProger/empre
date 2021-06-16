@@ -107,6 +107,27 @@
 }
 
 @media (max-width: $tablet) {
+  .services__bg {
+    height: 482px;
+  }
+
+  .services__bg__img {
+    display: none;
+  }
+
+  .services__list {
+    .container {
+      padding: 0 29px;
+    }
+  }
+
+  .services__item {
+    outline: 4px #fff solid;
+  }
+
+  .services__item__img {
+    width: auto;
+  }
 }
 
 @media (max-width: $mobile) {

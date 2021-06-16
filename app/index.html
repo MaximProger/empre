@@ -22,9 +22,21 @@
 	<header class="header" id="header">
 		<div class="header__top">
 			<div class="header__top__inner">
-				<button type="button" class="header__top__btn header__burger" id="burgerBtn">
-					<img width="16" height="15" src="./images/dest/icons/burger.svg" alt="burger" class="header__burger__icon">
-				</button>
+				<div class="header__top__left">
+					<button type="button" class="header__top__btn header__burger" id="burgerBtn">
+						<img width="16" height="15" src="./images/dest/icons/burger.svg" alt="burger" class="header__burger__icon">
+					</button>
+
+					<a href="#" class="logo no-xl md">
+						<img class="logo__icon" width="79" height="80" src="./images/dest/logo.svg" alt="empr">
+
+						<div class="logo__content">
+							<img height="53" width="211" src="./images/dest/logo__text.svg" alt="empr" class="logo__text">
+						</div>
+					</a>
+				</div>
+
+
 				<div class="header__top__right">
 					<div class="header__mail">
 						<img width="21" height="15" src="./images/dest/icons/email.svg" alt="email" class="header__mail__icon">
@@ -52,7 +64,7 @@
 						<form id="headerSearchForm" name="headerSearchForm" class="header__form">
 							<input type="text" id="headerSearchInput" name="headerSearchInput" class="header__search__input"
 								placeholder="Искать на сайте" required>
-							<button type="submit" class="header__top__btn header__search__btn">
+							<button type="submit" class="header__top__btn header__search__btn" id="headerSearchBtn">
 								<img width="27" height="27" class="header__search__icon" src="./images/dest/icons/search.svg"
 									alt="search">
 							</button>
@@ -62,7 +74,7 @@
 			</div>
 
 		</div>
-		<div class="header__mid">
+		<div class="header__mid no-md">
 			<div class="container">
 				<div class="header__mid__inner">
 					<div class="header__mid__left">
@@ -94,7 +106,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="header__bot">
+		<div class="header__bot no-md">
 			<div class="container">
 				<nav class="nav">
 					<ul class="nav__list">
@@ -234,18 +246,22 @@
 		<section class="intro">
 			<div class="container">
 				<div class="intro__inner">
-					<div class="intro__content">
-						<h1 class="intro__title">
-							изготовление электрического и электромеханического оборудования
-						</h1>
-						<p class="intro__description">
-							промышленного назначения, с последующими<br>
-							шеф-монтажом и пусконаладочными работами
-						</p>
-						<a href="#" class="btn btn--white intro__btn">
-							узнать подробнее
-						</a>
+					<div class="intro__wrapper">
+						<div class="intro__content">
+							<h1 class="intro__title">
+								изготовление электрического и электромеханического оборудования
+							</h1>
+							<p class="intro__description">
+								промышленного назначения, с последующими<br>
+								шеф-монтажом и пусконаладочными работами
+							</p>
+							<a href="#" class="btn btn--white intro__btn">
+								узнать подробнее
+							</a>
+						</div>
+						<span class="intro__figure"></span>
 					</div>
+
 				</div>
 			</div>
 
@@ -490,6 +506,15 @@
 
 								<a href="#" class="services__item">
 									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/services/1--mobile-sm.webp"
+											media="(max-width: 576px)" />
+										<source srcset="./images/dest/services/1--mobile-sm.png" media="(max-width: 576px)" />
+										<source type="image/webp" srcset="./images/dest/services/1--mobile.webp"
+											media="(max-width: 768px)" />
+										<source srcset="./images/dest/services/1--mobile.png" media="(max-width: 768px)" />
+										<source type="image/webp" srcset="./images/dest/services/1--tablet.webp"
+											media="(max-width: 992px)" />
+										<source srcset="./images/dest/services/1--tablet.png" media="(max-width: 992px)" />
 										<source type="image/webp" srcset="./images/dest/services/1.webp">
 										<img width="270" height="275" src="./images/dest/services/1.png" alt="service"
 											class="services__item__img">
@@ -501,6 +526,15 @@
 
 								<a href="#" class="services__item">
 									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/services/2--mobile-sm.webp"
+											media="(max-width: 576px)" />
+										<source srcset="./images/dest/services/2--mobile-sm.png" media="(max-width: 576px)" />
+										<source type="image/webp" srcset="./images/dest/services/2--mobile.webp"
+											media="(max-width: 768px)" />
+										<source srcset="./images/dest/services/2--mobile.png" media="(max-width: 768px)" />
+										<source type="image/webp" srcset="./images/dest/services/2--tablet.webp"
+											media="(max-width: 992px)" />
+										<source srcset="./images/dest/services/2--tablet.png" media="(max-width: 992px)" />
 										<source type="image/webp" srcset="./images/dest/services/2.webp">
 										<img width="379" height="275" src="./images/dest/services/2.png" alt="service"
 											class="services__item__img">
@@ -512,6 +546,15 @@
 
 								<a href="#" class="services__item">
 									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/services/3--mobile-sm.webp"
+											media="(max-width: 576px)" />
+										<source srcset="./images/dest/services/3--mobile-sm.png" media="(max-width: 576px)" />
+										<source type="image/webp" srcset="./images/dest/services/3--mobile.webp"
+											media="(max-width: 768px)" />
+										<source srcset="./images/dest/services/3--mobile.png" media="(max-width: 768px)" />
+										<source type="image/webp" srcset="./images/dest/services/3--tablet.webp"
+											media="(max-width: 992px)" />
+										<source srcset="./images/dest/services/3--tablet.png" media="(max-width: 992px)" />
 										<source type="image/webp" srcset="./images/dest/services/3.webp">
 										<img width="461" height="275" src="./images/dest/services/3.png" alt="service"
 											class="services__item__img">
@@ -523,6 +566,15 @@
 
 								<a href="#" class="services__item">
 									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/services/4--mobile-sm.webp"
+											media="(max-width: 576px)" />
+										<source srcset="./images/dest/services/4--mobile-sm.png" media="(max-width: 576px)" />
+										<source type="image/webp" srcset="./images/dest/services/4--mobile.webp"
+											media="(max-width: 768px)" />
+										<source srcset="./images/dest/services/4--mobile.png" media="(max-width: 768px)" />
+										<source type="image/webp" srcset="./images/dest/services/4--tablet.webp"
+											media="(max-width: 992px)" />
+										<source srcset="./images/dest/services/4--tablet.png" media="(max-width: 992px)" />
 										<source type="image/webp" srcset="./images/dest/services/4.webp">
 										<img width="366" height="340" src="./images/dest/services/4.png" alt="service"
 											class="services__item__img">
@@ -535,6 +587,15 @@
 								<div class="services__item__wrapper">
 									<a href="#" class="services__item">
 										<picture decoding="async">
+											<source type="image/webp" srcset="./images/dest/services/5--mobile-sm.webp"
+												media="(max-width: 576px)" />
+											<source srcset="./images/dest/services/5--mobile-sm.png" media="(max-width: 576px)" />
+											<source type="image/webp" srcset="./images/dest/services/5--mobile.webp"
+												media="(max-width: 768px)" />
+											<source srcset="./images/dest/services/5--mobile.png" media="(max-width: 768px)" />
+											<source type="image/webp" srcset="./images/dest/services/5--tablet.webp"
+												media="(max-width: 992px)" />
+											<source srcset="./images/dest/services/5--tablet.png" media="(max-width: 992px)" />
 											<source type="image/webp" srcset="./images/dest/services/5.webp">
 											<img width="376" height="170" src="./images/dest/services/5.png" alt="service"
 												class="services__item__img">
@@ -545,6 +606,15 @@
 									</a>
 									<a href="#" class="services__item">
 										<picture decoding="async">
+											<source type="image/webp" srcset="./images/dest/services/6--mobile-sm.webp"
+												media="(max-width: 576px)" />
+											<source srcset="./images/dest/services/6--mobile-sm.png" media="(max-width: 576px)" />
+											<source type="image/webp" srcset="./images/dest/services/6--mobile.webp"
+												media="(max-width: 768px)" />
+											<source srcset="./images/dest/services/6--mobile.png" media="(max-width: 768px)" />
+											<source type="image/webp" srcset="./images/dest/services/6--tablet.webp"
+												media="(max-width: 992px)" />
+											<source srcset="./images/dest/services/6--tablet.png" media="(max-width: 992px)" />
 											<source type="image/webp" srcset="./images/dest/services/6.webp">
 											<img width="376" height="170" src="./images/dest/services/6.png" alt="service"
 												class="services__item__img">
@@ -559,6 +629,15 @@
 
 								<a href="#" class="services__item">
 									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/services/7--mobile-sm.webp"
+											media="(max-width: 576px)" />
+										<source srcset="./images/dest/services/7--mobile-sm.png" media="(max-width: 576px)" />
+										<source type="image/webp" srcset="./images/dest/services/7--mobile.webp"
+											media="(max-width: 768px)" />
+										<source srcset="./images/dest/services/7--mobile.png" media="(max-width: 768px)" />
+										<source type="image/webp" srcset="./images/dest/services/7--tablet.webp"
+											media="(max-width: 992px)" />
+										<source srcset="./images/dest/services/7--tablet.png" media="(max-width: 992px)" />
 										<source type="image/webp" srcset="./images/dest/services/7.webp">
 										<img width="366" height="340" src="./images/dest/services/7.png" alt="service"
 											class="services__item__img">
@@ -612,7 +691,13 @@
 					</a>
 				</div>
 			</div>
-			<img width="1325" height="879" src="./images/dest/map.svg" alt="map" class="about__bg">
+			<picture decoding="async">
+				<source srcset="./images/dest/map--mobile-sm.svg" media="(max-width: 576px)" />
+				<source srcset="./images/dest/map--mobile.svg" media="(max-width: 768px)" />
+				<source srcset="./images/dest/map--tablet.svg" media="(max-width: 992px)" />
+				<img width="1325" height="879" src="./images/dest/map.svg" alt="map" class="about__bg">
+			</picture>
+
 		</section>
 
 		<section class="certificates section">
@@ -1043,7 +1128,8 @@
 
 						<picture decoding="async">
 							<source type="image/webp" srcset="./images/dest/error__in__text.webp">
-							<img width="340" height="34" src="./images/dest/error__in__text.png" alt="text" class="footer__error">
+							<img width="340" height="34" src="./images/dest/error__in__text.png" alt="text"
+								class="footer__error no-md">
 						</picture>
 
 					</div>
@@ -1065,6 +1151,12 @@
 							</li>
 						</ul>
 					</nav>
+
+					<picture decoding="async">
+						<source type="image/webp" srcset="./images/dest/error__in__text.webp">
+						<img width="340" height="34" src="./images/dest/error__in__text.png" alt="text"
+							class="footer__error no-xl md">
+					</picture>
 				</div>
 			</div>
 		</div>
@@ -1079,243 +1171,265 @@
 			</div>
 			<div class="menu__body">
 				<div class="menu__body__wrapper row">
-					<div class="menu__body__col col-6">
-						<h2 class="menu__body__title">
-							Продукция
-						</h2>
-						<div class="menu__body__inner row">
-							<div class="menu__body__inner__col col-6">
-								<div class="menu__body__nav__wrapper">
-									<nav class="menu__body__nav">
-										<h3 class="menu__body__nav__title">
-											РУ 0,4 кВ
-										</h3>
-										<ul class="menu__body__nav__list">
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">ПР</span> (пункты распределительные)
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">ШРЭ</span> (шкафы распределения электроэнергии)
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">ВРУ</span> (вводно-распределительные устройства)
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">ЩО</span> (щитки освещения)
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">ЩАО</span> (щитки аварийного освещения)
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">ШУ</span> (шкафы управления)
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">РУСМ</span> (ящики управления электродвигателями)
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">ЩА</span> (щитки автоматики)
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">ПУ</span> (пункты управления)
-												</a>
-											</li>
-										</ul>
-									</nav>
+					<div class="menu__body__col col-12 col-md-6">
+						<div class="menu__body__box">
+							<h2 class="menu__body__title">
+								Продукция
+								<img width="18" height="10" src="./images/dest/icons/menu__arrow.svg" alt="arrow"
+									class="menu__arrow no-xl xs">
+							</h2>
+							<div class="menu__body__inner row">
+								<div class="menu__body__inner__col col-12 col-md-6">
+									<div class="menu__body__nav__wrapper">
+										<nav class="menu__body__nav">
+											<h3 class="menu__body__nav__title">
+												РУ 0,4 кВ
+											</h3>
+											<ul class="menu__body__nav__list">
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">ПР</span> (пункты распределительные)
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">ШРЭ</span> (шкафы распределения электроэнергии)
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">ВРУ</span> (вводно-распределительные устройства)
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">ЩО</span> (щитки освещения)
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">ЩАО</span> (щитки аварийного освещения)
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">ШУ</span> (шкафы управления)
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">РУСМ</span> (ящики управления электродвигателями)
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">ЩА</span> (щитки автоматики)
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">ПУ</span> (пункты управления)
+													</a>
+												</li>
+											</ul>
+										</nav>
 
-									<nav class="menu__body__nav">
-										<h3 class="menu__body__nav__title">
-											РУ 6-10 кВ
-										</h3>
-										<ul class="menu__body__nav__list menu__body__nav__list--margin">
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">КСО</span><br>
-													(камеры сборные одностороннего обслуживания)
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">КРУ</span><br>
-													(комплектные распределительные устройства)
-												</a>
-											</li>
-										</ul>
-									</nav>
+										<nav class="menu__body__nav">
+											<h3 class="menu__body__nav__title">
+												РУ 6-10 кВ
+											</h3>
+											<ul class="menu__body__nav__list menu__body__nav__list--margin">
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">КСО</span><br>
+														(камеры сборные одностороннего обслуживания)
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">КРУ</span><br>
+														(комплектные распределительные устройства)
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
 								</div>
-							</div>
 
-							<div class="menu__body__inner__col col-6">
-								<div class="menu__body__nav__wrapper">
-									<nav class="menu__body__nav">
-										<h3 class="menu__body__nav__title">
-											КТП
-										</h3>
-										<ul class="menu__body__nav__list">
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Комплектные<br>
-														трансформаторные<br>
-														подстанции</span>
-												</a>
-											</li>
-										</ul>
-									</nav>
+								<div class="menu__body__inner__col col-12 col-md-6">
+									<div class="menu__body__nav__wrapper">
+										<nav class="menu__body__nav">
+											<h3 class="menu__body__nav__title">
+												КТП
+											</h3>
+											<ul class="menu__body__nav__list">
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Комплектные<br>
+															трансформаторные<br>
+															подстанции</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
 
-									<nav class="menu__body__nav">
-										<h3 class="menu__body__nav__title">
-											ПКУ
-										</h3>
-										<ul class="menu__body__nav__list menu__body__nav__list--margin">
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Пункты коммерческого учёта</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Реклоузеры</span>
-												</a>
-											</li>
-										</ul>
-									</nav>
+										<nav class="menu__body__nav">
+											<h3 class="menu__body__nav__title">
+												ПКУ
+											</h3>
+											<ul class="menu__body__nav__list menu__body__nav__list--margin">
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Пункты коммерческого учёта</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Реклоузеры</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
 
-									<nav class="menu__body__nav">
-										<h3 class="menu__body__nav__title">
-											Электроника
-										</h3>
-										<ul class="menu__body__nav__list">
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Электроника</span>
-												</a>
-											</li>
-										</ul>
-									</nav>
+										<nav class="menu__body__nav">
+											<h3 class="menu__body__nav__title">
+												Электроника
+											</h3>
+											<ul class="menu__body__nav__list">
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Электроника</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="menu__body__col col-6">
+					<div class="col-12 col-md-6">
 
 
 						<div class="menu__body__inner row">
-							<div class="menu__body__inner__col col-6">
+							<div class="menu__body__inner__col col-12 col-md-6">
+								<div class="menu__body__box">
+									<h2 class="menu__body__title">
+										Услуги
+										<img width="18" height="10" src="./images/dest/icons/menu__arrow.svg" alt="arrow"
+											class="menu__arrow no-xl xs">
+									</h2>
 
-								<h2 class="menu__body__title">
-									Услуги
-								</h2>
-
-								<div class="menu__body__nav__wrapper">
-									<nav class="menu__body__nav">
-										<ul class="menu__body__nav__list menu__body__nav__list--margin">
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Проектирование<br> электротехнического оборудования</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Изготовление<br> электрооборудования</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Электромонтажные и пусконаладочные работы</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Сервис и ремонт, гарантийный,<br> либо за отдельную оплату</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Ретрофит (модернизация) существующих электроустановок
-													</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">
-														Металлообработка</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Электроника</span>
-												</a>
-											</li>
-										</ul>
-									</nav>
+									<div class="menu__body__nav__wrapper">
+										<nav class="menu__body__nav">
+											<ul class="menu__body__nav__list menu__body__nav__list--margin">
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Проектирование<br> электротехнического оборудования</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Изготовление<br> электрооборудования</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Электромонтажные и пусконаладочные работы</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Сервис и ремонт, гарантийный,<br> либо за отдельную оплату</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Ретрофит (модернизация) существующих электроустановок
+														</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">
+															Металлообработка</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Электроника</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
 								</div>
+
 
 							</div>
 
-							<div class="menu__body__inner__col col-6">
+							<div class="menu__body__inner__col col-12 col-md-6">
 
-								<h2 class="menu__body__title">
-									О компании
-								</h2>
+								<div class="menu__body__box">
+									<h2 class="menu__body__title">
+										О компании
+										<img width="18" height="10" src="./images/dest/icons/menu__arrow.svg" alt="arrow"
+											class="menu__arrow no-xl xs">
+									</h2>
 
-								<div class="menu__body__nav__wrapper">
+									<div class="menu__body__nav__wrapper">
+										<nav class="menu__body__nav">
+											<ul class="menu__body__nav__list">
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Видео</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Карьера</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Вакансии</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Партнеры и клиенты
+														</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Анкета партнера</span>
+													</a>
+												</li>
+												<li class="menu__body__nav__item">
+													<a href="#" class="menu__body__nav__link">
+														<span class="bold">Контрагентам</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+
+
+
+
+
+								</div>
+
+								<div class="menu__body__box menu__body__box--mt">
+									<h2 class="menu__body__title">
+										Контакты
+										<img width="18" height="10" src="./images/dest/icons/menu__arrow.svg" alt="arrow"
+											class="menu__arrow no-xl xs">
+									</h2>
+
 									<nav class="menu__body__nav">
-										<ul class="menu__body__nav__list">
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Видео</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Карьера</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Вакансии</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Партнеры и клиенты
-													</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Анкета партнера</span>
-												</a>
-											</li>
-											<li class="menu__body__nav__item">
-												<a href="#" class="menu__body__nav__link">
-													<span class="bold">Контрагентам</span>
-												</a>
-											</li>
-										</ul>
-									</nav>
-
-									<nav class="menu__body__nav">
-										<h2 class="menu__body__title">
-											Контакты
-										</h2>
 										<ul class="menu__body__nav__list menu__body__nav__list--margin">
 											<li class="menu__body__nav__item">
 												<a href="#" class="menu__body__nav__link">

@@ -87,6 +87,31 @@
 }
 
 @media (max-width: $tablet) {
+  .footer {
+    padding-top: 27px;
+    padding-bottom: 71px;
+  }
+
+  .footer__left {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    margin: 0;
+    margin-bottom: 31px;
+
+    img {
+      width: 274px;
+    }
+  }
+
+  .footer__text__wrapper {
+    margin-bottom: 0;
+  }
+
+  .footer__nav {
+    margin-bottom: 65px;
+  }
 }
 
 @media (max-width: $mobile) {

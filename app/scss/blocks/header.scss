@@ -191,9 +191,78 @@
 }
 
 @media (max-width: $tablet) {
+  .header__top {
+    background: $black;
+  }
+
+  .header__top__left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .header__burger {
+    margin-right: 10px;
+  }
+
+  .header__mail {
+    margin-right: 30px;
+  }
+
+  .header__mail__link {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .header__search {
+    margin-left: 30px;
+  }
+
+  .header__search__input {
+    width: 184px;
+    padding-left: 16px;
+
+    color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
 }
 
 @media (max-width: $mobile) {
+  .header__search {
+    margin-left: 25px;
+  }
+
+  .header__form {
+    position: relative;
+  }
+
+  .header__search__input {
+    position: absolute;
+    left: -390px;
+    top: 0;
+    z-index: 2;
+
+    visibility: hidden;
+
+    width: 390px;
+
+    opacity: 0;
+    background: rgb(197, 199, 196);
+
+    &:focus,
+    &:hover {
+      background: rgb(175, 175, 174);
+    }
+
+    &--show {
+      visibility: visible;
+
+      opacity: 1;
+    }
+  }
 }
 
 @media (max-width: $mobile-sm) {

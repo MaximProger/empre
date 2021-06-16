@@ -95,6 +95,17 @@
 }
 
 @media (max-width: $tablet) {
+  .contacts {
+    padding-bottom: 107px;
+  }
+
+  .address {
+    padding: 0 30px;
+  }
+
+  .address__icon {
+    margin-right: 16px;
+  }
 }
 
 @media (max-width: $mobile) {

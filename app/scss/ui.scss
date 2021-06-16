@@ -36,6 +36,10 @@
   justify-content: flex-start;
 
   text-decoration: none;
+
+  &.no-xl {
+    display: none;
+  }
 }
 
 .logo__icon {
@@ -286,6 +290,29 @@
 }
 
 @media (max-width: $tablet) {
+  .logo {
+    &.md {
+      display: flex;
+    }
+  }
+
+  .logo__icon {
+    width: 42.7px;
+    margin-right: 9px;
+  }
+
+  .logo__text {
+    width: 150px;
+    margin-right: 0;
+  }
+
+  .down__btn {
+    display: none;
+  }
+
+  .title {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: $mobile) {

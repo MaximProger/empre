@@ -8,6 +8,22 @@
 }
 
 @media (max-width: $tablet) {
+  .certificates {
+    padding-bottom: 50px;
+  }
+
+  .certificates__slider {
+    .slick-slide {
+      & > div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    picture {
+      width: fit-content !important;
+    }
+  }
 }
 
 @media (max-width: $mobile) {

@@ -82,6 +82,9 @@
 }
 
 @media (max-width: $tablet) {
+  .social__inner {
+    gap: 30px;
+  }
 }
 
 @media (max-width: $mobile) {

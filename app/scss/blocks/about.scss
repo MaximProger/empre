@@ -26,6 +26,16 @@
 }
 
 @media (max-width: $tablet) {
+  .about {
+    padding-top: 83px;
+    padding-bottom: 127px;
+  }
+
+  .about__bg {
+    top: -80px;
+
+    width: auto;
+  }
 }
 
 @media (max-width: $mobile) {
