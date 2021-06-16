@@ -94,6 +94,7 @@ $(document).ready(function () {
           settings: {
             slidesToShow: 1,
             centerMode: false,
+            arrows: false,
           },
         },
       ],
@@ -137,6 +138,7 @@ $(document).ready(function () {
           settings: {
             slidesToShow: 1,
             centerMode: false,
+            arrows: false,
           },
         },
       ],
