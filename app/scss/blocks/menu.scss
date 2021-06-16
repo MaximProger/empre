@@ -129,6 +129,14 @@
 }
 
 @media (max-width: $mobile) {
+  .menu__body__col {
+    width: 100% !important;
+  }
+
+  .menu__body__inner__col {
+    width: 100% !important;
+  }
+
   .menu__body__title {
     font-size: 24px;
     line-height: 1;
@@ -197,11 +205,25 @@
   .menu__body__nav__list {
     &--margin {
       .menu__body__nav__item {
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
+    }
+  }
+
+  .menu__body__nav__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
 
 @media (max-width: $mobile-sm) {
+}
+
+@media (max-width: $mobile-micro) {
+  .menu__body {
+    padding: 20px 15px;
+  }
 }

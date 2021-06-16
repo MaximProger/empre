@@ -119,6 +119,13 @@
     display: none;
   }
 
+  .services__list__wrapper {
+    justify-content: center;
+
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
   .services__list {
     .container {
       padding: 0 29px;
@@ -145,6 +152,10 @@
     height: 384px;
   }
 
+  .services__list__wrapper {
+    max-width: 700px;
+  }
+
   .services__item {
     outline: 3px #fff solid;
   }
@@ -160,6 +171,10 @@
 }
 
 @media (max-width: $mobile-sm) {
+  .services__list__wrapper {
+    max-width: 510px;
+  }
+
   .services__item {
     outline: 5px #fff solid;
 
@@ -183,5 +198,17 @@
 
   .services__bg {
     height: 982px;
+  }
+}
+
+@media (max-width: $mobile-micro) {
+  .services__list {
+    .container {
+      padding: 0 15px;
+    }
+  }
+
+  .services__bg {
+    height: 90%;
   }
 }

@@ -135,6 +135,10 @@
   justify-content: flex-start;
 
   margin-bottom: 6px;
+
+  &.no-xl {
+    display: none;
+  }
 }
 
 .header__phone__icon {
@@ -233,6 +237,10 @@
   .header__phone {
     margin-bottom: 0;
     margin-right: 20px;
+
+    &.md {
+      display: flex;
+    }
   }
 }
 
@@ -307,5 +315,15 @@
 
   .header__phone {
     margin-right: 20px;
+  }
+}
+
+@media (max-width: $mobile-micro) {
+  .header__phone {
+    display: none;
+
+    &.md {
+      display: none;
+    }
   }
 }

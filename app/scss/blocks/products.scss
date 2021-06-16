@@ -204,3 +204,34 @@
     }
   }
 }
+
+@media (max-width: $mobile-micro) {
+  // .products__top {
+  //   margin-right: 5px;
+  // }
+
+  // .products__item {
+  //   height: 300px;
+  // }
+
+  // .products__list {
+  //   max-height: 300px;
+  // }
+
+  .products__item {
+    height: 420px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .products__item__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .products__top {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

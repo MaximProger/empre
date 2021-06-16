@@ -97,3 +97,17 @@
 
 @media (max-width: $mobile-sm) {
 }
+
+@media (max-width: $mobile-micro) {
+  .address {
+    padding: 0;
+  }
+
+  .address__inner {
+    padding: 20px 0px;
+  }
+
+  .address__item__text {
+    font-size: 14px;
+  }
+}

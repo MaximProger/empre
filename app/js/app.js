@@ -68,13 +68,13 @@ $(document).ready(function () {
       asNavFor: "#certificatesNav",
       responsive: [
         {
-          breakpoint: 992,
+          breakpoint: 1199,
           settings: {
             slidesToShow: 3,
           },
         },
         {
-          breakpoint: 768,
+          breakpoint: 991,
           settings: {
             slidesToShow: 1,
             centerMode: true,
@@ -82,11 +82,18 @@ $(document).ready(function () {
           },
         },
         {
-          breakpoint: 576,
+          breakpoint: 767,
           settings: {
             slidesToShow: 1,
             centerMode: true,
             centerPadding: "109px",
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            centerMode: false,
           },
         },
       ],
@@ -112,17 +119,24 @@ $(document).ready(function () {
       asNavFor: "#partnersNav",
       responsive: [
         {
-          breakpoint: 992,
+          breakpoint: 1199,
           settings: {
             slidesToShow: 3,
           },
         },
         {
-          breakpoint: 576,
+          breakpoint: 767,
           settings: {
             slidesToShow: 1,
             centerMode: true,
             centerPadding: "100px",
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            centerMode: false,
           },
         },
       ],
@@ -135,7 +149,7 @@ $(document).ready(function () {
     focusOnSelect: true,
   });
 
-  if ($(window).width() <= 768) {
+  if ($(window).width() <= 991) {
     $("#headerSearchBtn").click((evt) => {
       if (!$("#headerSearchInput").hasClass("header__search__input--show")) {
         evt.preventDefault();

@@ -325,3 +325,33 @@
 
 @media (max-width: $mobile-sm) {
 }
+
+@media (max-width: $mobile-micro) {
+  .btn {
+    max-width: 100%;
+  }
+
+  .icon__btn {
+    top: auto;
+    bottom: 5%;
+
+    transform: none;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 1.2;
+
+    &--small {
+      font-size: 36px;
+    }
+  }
+
+  .logo__icon {
+    width: 35px;
+  }
+
+  .logo__text {
+    width: 100px;
+  }
+}

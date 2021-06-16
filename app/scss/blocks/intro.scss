@@ -199,3 +199,16 @@
     right: -30px;
   }
 }
+
+@media (max-width: $mobile-micro) {
+  .intro__title {
+    font-size: 32px;
+
+    margin-bottom: 35px;
+  }
+
+  .intro__figure {
+    bottom: -5px;
+    right: -5px;
+  }
+}

@@ -12,9 +12,10 @@ $gradient: linear-gradient(
 );
 
 // Max-width
-$tablet: 992px;
-$mobile: 768px;
-$mobile-sm: 576px;
+$tablet: 1199px;
+$mobile: 991px;
+$mobile-sm: 767px;
+$mobile-micro: 575px;
 
 // FONTS LOAD SECTION
 @mixin font($fname, $fstyle, $fweight, $furl, $format) {
