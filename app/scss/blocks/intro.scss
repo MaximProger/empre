@@ -159,4 +159,43 @@
 }
 
 @media (max-width: $mobile-sm) {
+  .intro {
+    height: 968px;
+
+    background: url("../../images/dest/intro__bg--mobile-sm.png") no-repeat
+      center;
+    background-size: cover;
+  }
+
+  .intro__wrapper {
+    max-width: 390px;
+  }
+
+  .intro__content {
+    padding: 53px 30px 67px 26px;
+  }
+
+  .intro__title {
+    font-size: 40px;
+    line-height: 47px;
+
+    margin-bottom: 50px;
+  }
+
+  .intro__description {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-bottom: 41px;
+  }
+
+  .intro__btn {
+    margin: 0 auto;
+  }
+
+  .intro__figure {
+    bottom: -30px;
+    right: -30px;
+  }
 }

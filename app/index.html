@@ -38,13 +38,19 @@
 
 
 				<div class="header__top__right">
+					<div class="header__phone">
+						<img width="23" height="23" src="./images/dest/icons/phone.svg" alt="phone" class="header__phone__icon">
+						<a href="tel:8 800 200 50 60" class="header__phone__link">
+							8 800 200 50 60
+						</a>
+					</div>
 					<div class="header__mail">
 						<img width="21" height="15" src="./images/dest/icons/email.svg" alt="email" class="header__mail__icon">
 						<a href="mailto:info@empr.ru" class="header__mail__link">
 							info@empr.ru
 						</a>
 					</div>
-					<div class="social">
+					<div class="social no-xss">
 						<div class="social__inner">
 							<a href="#" class="social__item social__item--tlg" target="_blank">
 								<span class="social__item__icon"></span>
@@ -286,15 +292,16 @@
 						<div class="products__item">
 							<div class="products__item__wrapper">
 								<div class="products__top">
-									<img width="57" height="105" class="products__img" src="./images/dest/products/1.svg" alt="product">
+									<img width="57" height="105" class="products__img products__img--big"
+										src="./images/dest/products/1.svg" alt="product">
 								</div>
 								<div class="products__content">
 									<h3 class="products__item__title">
 										РУ 0,4 кВ
 									</h3>
 
-									<div class="products__list__wrapper row">
-										<ul class="products__list col-6">
+									<div class="products__list__wrapper">
+										<ul class="products__list">
 											<li class="products__list__item">
 												<a href="#" class="products__link">
 													ПР
@@ -324,9 +331,7 @@
 													ЩАО
 												</a>
 											</li>
-										</ul>
 
-										<ul class="products__list col-6">
 											<li class="products__list__item">
 												<a href="#" class="products__link">
 													ШУ
@@ -351,8 +356,8 @@
 												</a>
 											</li>
 										</ul>
-									</div>
 
+									</div>
 
 								</div>
 							</div>
@@ -361,14 +366,15 @@
 						<div class="products__item">
 							<div class="products__item__wrapper">
 								<div class="products__top">
-									<img width="59" height="138" class="products__img" src="./images/dest/products/2.svg" alt="product">
+									<img width="59" height="138" class="products__img products__img--big"
+										src="./images/dest/products/2.svg" alt="product">
 								</div>
 								<div class="products__content">
 									<h3 class="products__item__title">
 										РУ 6-10 кВ
 									</h3>
 
-									<div class="products__list__wrapper row">
+									<div class="products__list__wrapper">
 										<ul class="products__list">
 											<li class="products__list__item">
 												<a href="#" class="products__link">
@@ -399,7 +405,7 @@
 										КТП
 									</h3>
 
-									<div class="products__list__wrapper row">
+									<div class="products__list__wrapper">
 										<ul class="products__list col-12">
 											<li class="products__list__item">
 												<a href="#" class="products__link">
@@ -419,14 +425,15 @@
 						<div class="products__item">
 							<div class="products__item__wrapper">
 								<div class="products__top">
-									<img width="69" height="122" class="products__img" src="./images/dest/products/4.svg" alt="product">
+									<img width="69" height="122" class="products__img products__img--big"
+										src="./images/dest/products/4.svg" alt="product">
 								</div>
 								<div class="products__content">
 									<h3 class="products__item__title">
 										ПКУ
 									</h3>
 
-									<div class="products__list__wrapper row">
+									<div class="products__list__wrapper">
 										<ul class="products__list">
 											<li class="products__list__item">
 												<a href="#" class="products__link">
@@ -459,7 +466,7 @@
 										Электроника
 									</h3>
 
-									<div class="products__list__wrapper row">
+									<div class="products__list__wrapper">
 										<ul class="products__list">
 											<li class="products__list__item">
 												<a href="#" class="products__link">
@@ -584,8 +591,28 @@
 									</h3>
 								</a>
 
+								<a href="#" class="services__item no-xl xss">
+									<picture decoding="async">
+										<source type="image/webp" srcset="./images/dest/services/5--mobile-sm.webp"
+											media="(max-width: 576px)" />
+										<source srcset="./images/dest/services/5--mobile-sm.png" media="(max-width: 576px)" />
+										<source type="image/webp" srcset="./images/dest/services/5--mobile.webp"
+											media="(max-width: 768px)" />
+										<source srcset="./images/dest/services/5--mobile.png" media="(max-width: 768px)" />
+										<source type="image/webp" srcset="./images/dest/services/5--tablet.webp"
+											media="(max-width: 992px)" />
+										<source srcset="./images/dest/services/5--tablet.png" media="(max-width: 992px)" />
+										<source type="image/webp" srcset="./images/dest/services/5.webp">
+										<img width="376" height="170" src="./images/dest/services/5.png" alt="service"
+											class="services__item__img">
+									</picture>
+									<h3 class="services__item__title">
+										Сервис и ремонт,<br> гарантийный, либо за<br> отдельную оплату
+									</h3>
+								</a>
+
 								<div class="services__item__wrapper">
-									<a href="#" class="services__item">
+									<a href="#" class="services__item no-xss">
 										<picture decoding="async">
 											<source type="image/webp" srcset="./images/dest/services/5--mobile-sm.webp"
 												media="(max-width: 576px)" />
@@ -620,7 +647,7 @@
 												class="services__item__img">
 										</picture>
 										<h3 class="services__item__title">
-											Электроника
+											Автоматизация
 										</h3>
 									</a>
 								</div>
@@ -702,10 +729,14 @@
 
 		<section class="certificates section">
 			<div class="container">
-				<div class="certificates__inner">
-					<h2 class="certificates__title title title--small">
-						Сертификаты и разрешения
-					</h2>
+				<h2 class="certificates__title title title--small">
+					Сертификаты и разрешения
+				</h2>
+			</div>
+
+			<div class="certificates__inner">
+				<div class="container">
+
 					<div class="certificates__slider" id="certificatesSlider">
 
 						<picture decoding="async">
@@ -838,7 +869,7 @@
 					</h2>
 
 					<div class="contacts__wrapper row">
-						<div class="contacts__col col-4">
+						<div class="contacts__col col-12 col-sm-6 col-md-4">
 							<div class="contacts__box">
 								<h4 class="contacts__box__title">
 									Приемная
@@ -900,7 +931,7 @@
 							</div>
 						</div>
 
-						<div class="contacts__col col-4">
+						<div class="contacts__col col-12 col-sm-6 col-md-4">
 							<div class="contacts__box">
 								<h4 class="contacts__box__title">
 									Отдел кадров
@@ -962,7 +993,7 @@
 							</div>
 						</div>
 
-						<div class="contacts__col col-4">
+						<div class="contacts__col col-12 col-sm-6 col-md-4 no-xs">
 							<div class="contacts__box">
 								<h4 class="contacts__box__title">
 									Приемная
@@ -1036,7 +1067,7 @@
 				<div class="container">
 					<div class="address__inner row">
 
-						<div class="address__item col-3">
+						<div class="address__item col-6 col-md-3">
 							<div class="address__item__wrapper">
 								<img width="14" height="17" src="./images/dest/icons/flag.svg" alt="icon" class="address__icon">
 								<div class="address__item__content">
@@ -1051,7 +1082,7 @@
 							</div>
 						</div>
 
-						<div class="address__item col-3">
+						<div class="address__item col-6 col-md-3">
 							<div class="address__item__wrapper">
 								<img width="16" height="16" src="./images/dest/icons/phone__location.svg" alt="icon"
 									class="address__icon">
@@ -1067,7 +1098,7 @@
 							</div>
 						</div>
 
-						<div class="address__item col-3">
+						<div class="address__item col-6 col-md-3">
 							<div class="address__item__wrapper">
 								<img width="20" height="20" src="./images/dest/icons/clock.svg" alt="icon" class="address__icon">
 								<div class="address__item__content">
@@ -1082,7 +1113,7 @@
 							</div>
 						</div>
 
-						<div class="address__item col-3">
+						<div class="address__item col-6 col-md-3">
 							<div class="address__item__wrapper">
 								<img width="19" height="14" src="./images/dest/icons/email__location.svg" alt="icon"
 									class="address__icon">

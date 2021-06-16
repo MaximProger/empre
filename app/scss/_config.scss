@@ -73,3 +73,13 @@ $mobile-sm: 576px;
     display: inline-block;
   }
 }
+
+@media (max-width: $mobile-sm) {
+  .no-xss {
+    display: none;
+  }
+
+  .xss {
+    display: inline-block;
+  }
+}

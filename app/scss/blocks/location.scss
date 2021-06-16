@@ -67,9 +67,32 @@
 }
 
 @media (max-width: $tablet) {
+  .address {
+    padding: 0 30px;
+  }
+
+  .address__icon {
+    margin-right: 16px;
+  }
 }
 
 @media (max-width: $mobile) {
+  .address {
+    padding: 0 39px;
+  }
+
+  .address__inner {
+    gap: 36px 0;
+
+    padding: 17px 30px;
+  }
+
+  #map {
+    height: 490px;
+    .ymaps-2-1-78-map {
+      height: 490px;
+    }
+  }
 }
 
 @media (max-width: $mobile-sm) {

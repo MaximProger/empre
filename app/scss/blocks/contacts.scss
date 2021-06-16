@@ -98,18 +98,24 @@
   .contacts {
     padding-bottom: 107px;
   }
-
-  .address {
-    padding: 0 30px;
-  }
-
-  .address__icon {
-    margin-right: 16px;
-  }
 }
 
 @media (max-width: $mobile) {
+  .contacts__triangle {
+    bottom: 0;
+    top: auto;
+
+    width: 466px;
+    height: 474px;
+  }
 }
 
 @media (max-width: $mobile-sm) {
+  .contacts__col {
+    margin-bottom: 37px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

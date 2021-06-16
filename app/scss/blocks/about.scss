@@ -39,7 +39,31 @@
 }
 
 @media (max-width: $mobile) {
+  .about {
+    padding-top: 74px;
+    padding-bottom: 83px;
+  }
+
+  .about__text__wrapper {
+    margin-bottom: 53px;
+  }
+
+  .about__bg {
+    top: -130px;
+  }
 }
 
 @media (max-width: $mobile-sm) {
+  .about {
+    padding-top: 92px;
+    padding-bottom: 44px;
+  }
+
+  .about__btn {
+    margin: 0 auto;
+  }
+
+  .about__bg {
+    top: -90px;
+  }
 }
