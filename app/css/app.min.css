@@ -564,8 +564,12 @@ textarea {
     transform: none;
   }
   .title {
-    font-size: 50px;
+    font-size: 36px;
     line-height: 1.2;
+    margin-bottom: 35px;
+  }
+  .title::before {
+    height: 60px;
   }
   .title--small {
     font-size: 36px;
@@ -575,6 +579,9 @@ textarea {
   }
   .logo__text {
     width: 100px;
+  }
+  .slider__nav {
+    margin-top: 20px;
   }
 }
 .header__top {
@@ -1329,7 +1336,7 @@ textarea {
     margin-bottom: 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .menu__body {
     padding: 20px 15px;
   }
@@ -1952,6 +1959,12 @@ textarea {
 @media (max-width: 575px) {
   .services__list .container {
     padding: 0 15px;
+  }
+  .services__item {
+    width: 100%;
+  }
+  .services__item__img {
+    width: 100%;
   }
   .services__bg {
     height: 90%;

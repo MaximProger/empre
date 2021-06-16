@@ -339,8 +339,14 @@
   }
 
   .title {
-    font-size: 50px;
+    font-size: 36px;
     line-height: 1.2;
+
+    margin-bottom: 35px;
+
+    &::before {
+      height: 60px;
+    }
 
     &--small {
       font-size: 36px;
@@ -353,5 +359,9 @@
 
   .logo__text {
     width: 100px;
+  }
+
+  .slider__nav {
+    margin-top: 20px;
   }
 }
