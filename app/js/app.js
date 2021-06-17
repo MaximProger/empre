@@ -17,12 +17,17 @@ $(document).ready(function () {
 
   $("#burgerBtn").click((evt) => {
     evt.preventDefault();
-    $("#menu").addClass("menu--show");
+
+    $("#menu").toggleClass("menu--show");
 
     if ($(window).width() >= 768) {
-      overlay(true);
+      if (!$("#menu").hasClass("menu--show")) {
+        overlay(false);
+      } else {
+        overlay(true);
+      }
     } else {
-      $("html").addClass("noscroll");
+      $("html").toggleClass("noscroll");
     }
   });
 
@@ -37,7 +42,9 @@ $(document).ready(function () {
     // событие клика по веб-документу
     const menu = $("#menu"); // тут указываем ID элемента
     if (
-      !menu.is(e.target) && // если клик был не по нашему блоку
+      !menu.is(e.target) &&
+      !$("#burgerBtn").is(e.target) &&
+      !$(".header__burger__icon").has(e.target) && // если клик был не по нашему блоку
       menu.has(e.target).length === 0
     ) {
       // и не по его дочерним элементам

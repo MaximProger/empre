@@ -1216,6 +1216,10 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .menu__close:hover {
   opacity: 0.7;
@@ -1308,6 +1312,11 @@ body {
     justify-content: space-between;
     margin-bottom: 0;
     height: 70px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     border-bottom: 1px solid #fff;
   }
   .menu__arrow {
@@ -1982,6 +1991,9 @@ body {
 @media (max-width: 575px) {
   .services__list .container {
     padding: 0 15px;
+  }
+  .services__item__wrapper {
+    width: 100%;
   }
   .services__item {
     width: 100%;
