@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Slick -->
+  <link rel="stylesheet" href="./css/include/slick.css">
+
+  <!-- Bootstrap Grid -->
+  <link rel="stylesheet" href="./css/include/bootstrap-grid.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/app.min.css">
+  <title>Главная</title>
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="header__top">
+      <div class="header__top__inner">
+        <div class="header__top__left">
+          <button type="button" class="header__top__btn header__burger" id="burgerBtn">
+            <img loading="lazy" width="16" height="15" src="./images/dest/icons/burger.svg" alt="burger"
+              class="header__burger__icon">
+          </button>
+
+          <a href="#" class="logo no-xl md">
+            <img loading="lazy" class="logo__icon" width="79" height="80" src="./images/dest/logo.svg" alt="empr">
+
+            <div class="logo__content">
+              <img loading="lazy" height="53" width="211" src="./images/dest/logo__text.svg" alt="empr"
+                class="logo__text">
+            </div>
+          </a>
+        </div>
+
+
+        <div class="header__top__right">
+          <div class="header__phone no-xl md">
+            <img loading="lazy" width="23" height="23" src="./images/dest/icons/phone.svg" alt="phone"
+              class="header__phone__icon">
+            <a href="tel:8 800 200 50 60" class="header__phone__link">
+              8 800 200 50 60
+            </a>
+          </div>
+          <div class="header__mail">
+            <img loading="lazy" width="21" height="15" src="./images/dest/icons/email.svg" alt="email"
+              class="header__mail__icon">
+            <a href="mailto:info@empr.ru" class="header__mail__link">
+              info@empr.ru
+            </a>
+          </div>
+          <div class="social no-xss">
+            <div class="social__inner">
+              <a href="#" class="social__item social__item--tlg" target="_blank">
+                <span class="social__item__icon"></span>
+              </a>
+              <a href="#" class="social__item social__item--vk" target="_blank">
+                <span class="social__item__icon"></span>
+              </a>
+              <a href="#" class="social__item social__item--inst" target="_blank">
+                <span class="social__item__icon"></span>
+              </a>
+              <a href="#" class="social__item social__item--yt" target="_blank">
+                <span class="social__item__icon"></span>
+              </a>
+            </div>
+          </div>
+          <div class="header__search">
+            <form id="headerSearchForm" name="headerSearchForm" class="header__form">
+              <input type="text" id="headerSearchInput" name="headerSearchInput" class="header__search__input"
+                placeholder="Искать на сайте" required>
+              <button type="submit" class="header__top__btn header__search__btn" id="headerSearchBtn">
+                <img loading="lazy" width="27" height="27" class="header__search__icon"
+                  src="./images/dest/icons/search.svg" alt="search">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="header__mid no-md">
+      <div class="container">
+        <div class="header__mid__inner">
+          <div class="header__mid__left">
+            <a href="#" class="logo">
+              <img loading="lazy" class="logo__icon" width="79" height="80" src="./images/dest/logo.svg" alt="empr">
+
+              <div class="logo__content">
+                <img loading="lazy" height="53" width="211" src="./images/dest/logo__text.svg" alt="empr"
+                  class="logo__text">
+
+                <h2 class="logo__title">
+                  Научно-производственное предприятие<br> электромонтажных и пусконаладочных работ
+                </h2>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="header__mid__right">
+            <div class="header__phone">
+              <img loading="lazy" width="23" height="23" src="./images/dest/icons/phone.svg" alt="phone"
+                class="header__phone__icon">
+              <a href="tel:8 800 200 50 60" class="header__phone__link">
+                8 800 200 50 60
+              </a>
+            </div>
+            <button type="button" class="header__recall" id="headerRecall">
+              Обратный звонок
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bot no-md">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <span class="nav__link">
+                Продукция
+              </span>
+
+              <div class="nav__menu">
+                <div class="nav__menu__inner">
+                  <div class="nav__menu__line">
+                    <div class="nav__menu__line__wrapper row">
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Проектирование<br> электротехнического оборудования
+                        </a>
+                      </div>
+
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Ретрофит (модернизация)<br> существующих электроустановок
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="nav__menu__line">
+                    <div class="nav__menu__line__wrapper row">
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Изготовление<br>
+                          электрооборудования
+                        </a>
+                      </div>
+
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Металлообработка
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="nav__menu__line">
+                    <div class="nav__menu__line__wrapper row">
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Электромонтажные и<br> пусконаладочные работы
+                        </a>
+                      </div>
+
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Электроника
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item">
+              <span class="nav__link">
+                Услуги
+              </span>
+
+              <div class="nav__menu">
+                <div class="nav__menu__inner">
+                  <div class="nav__menu__line">
+                    <div class="nav__menu__line__wrapper row">
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Проектирование<br> электротехнического оборудования
+                        </a>
+                      </div>
+
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Ретрофит (модернизация)<br> существующих электроустановок
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="nav__menu__line">
+                    <div class="nav__menu__line__wrapper row">
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Изготовление<br>
+                          электрооборудования
+                        </a>
+                      </div>
+
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Металлообработка
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="nav__menu__line">
+                    <div class="nav__menu__line__wrapper row">
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Электромонтажные и<br> пусконаладочные работы
+                        </a>
+                      </div>
+
+                      <div class="nav__menu__col col-6">
+                        <a href="#" class="nav__menu__link">
+                          Электроника
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                О компании
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="inner">
+
+      <div class="container">
+        <div class="inner__wrapper">
+
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__inner">
+              <a href="#" class="breadcrumbs__item">
+                ООО "НПП ЭМПР"
+              </a>
+
+              <a href="#" class="breadcrumbs__item">
+                Продукция
+              </a>
+
+              <a href="#" class="breadcrumbs__item">
+                РУ 0,4 кВ
+              </a>
+
+              <a href="#" class="breadcrumbs__item">
+                РУСМ
+              </a>
+            </div>
+          </div>
+
+          <section class="detail">
+            <div class="detail__inner">
+              <div class="detail__info">
+                <div class="detail__info__wrapper row">
+                  <div class="detail__info__col col-lg-6 col-12">
+                    <div class="detail__info__col__wrapper">
+                      <h2 class="inner__title detail__info__title">
+                        2КВЭ-6
+                      </h2>
+
+                      <ul class="detail__info__list">
+                        <li class="detail__info__item row">
+                          <span class="detail__info__item__text col-8">
+                            Номинальная частота
+                          </span>
+
+                          <span class="detail__info__item__text col-4">
+                            50/60 Гц
+                          </span>
+                        </li>
+                        <li class="detail__info__item row">
+                          <span class="detail__info__item__text col-8">
+                            Номинальное напряжение
+                          </span>
+
+                          <span class="detail__info__item__text col-4">
+                            7,2; 12кВ
+                          </span>
+                        </li>
+                        <li class="detail__info__item row">
+                          <span class="detail__info__item__text col-8">
+                            Номинальный ток сборных шин
+                          </span>
+
+                          <span class="detail__info__item__text col-4">
+                            до 3150 (4000) А
+                          </span>
+                        </li>
+                        <li class="detail__info__item row">
+                          <span class="detail__info__item__text col-8">
+                            Номинальный ток распределительных шин
+                          </span>
+
+                          <span class="detail__info__item__text col-4">
+                            630, 1250, 1600, 2000, 2500, 3150 (4000) А
+                          </span>
+                        </li>
+                        <li class="detail__info__item row">
+                          <span class="detail__info__item__text col-8">
+                            Номинальный ток термической устойчивости
+                          </span>
+
+                          <span class="detail__info__item__text col-4">
+                            до 31,5 кА
+                          </span>
+                        </li>
+                        <li class="detail__info__item row">
+                          <span class="detail__info__item__text col-8">
+                            Номинальный период тока термической устойчивости
+                          </span>
+
+                          <span class="detail__info__item__text col-4">
+                            до 4 с
+                          </span>
+                        </li>
+                        <li class="detail__info__item row">
+                          <span class="detail__info__item__text col-8">
+                            Испытание на дугоустойчивость
+                          </span>
+
+                          <span class="detail__info__item__text col-4">
+                            (1с) 31,5 кА
+                          </span>
+                        </li>
+                        <li class="detail__info__item row">
+                          <span class="detail__info__item__text col-8">
+                            Степень защиты оболочкой
+                          </span>
+
+                          <span class="detail__info__item__text col-4">
+                            IP 31/41
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="detail__info__col col-lg-6 col-12">
+                    <div class="detail__photo__wrapper">
+                      <picture decoding="async">
+                        <source type="image/webp" srcset="./images/dest/detail__photo.webp">
+                        <img loading="lazy" width="401" height="363" src="./images/dest/detail__photo.png"
+                          alt="detail_photo" class="detail__photo">
+                      </picture>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <nav class="detail__nav">
+                <div class="detail__nav__wrapper">
+                  <a href="#" class="detail__nav__item">
+                    <img loading="lazy" width="22" height="20" src="./images/dest/icons/catalog.svg" alt="icon"
+                      class="detail__nav__icon">
+                    <span class="detail__nav__text">
+                      Каталог
+                    </span>
+                  </a>
+
+                  <a href="#" class="detail__nav__item">
+                    <img loading="lazy" width="22" height="22" src="./images/dest/icons/certificate.svg" alt="icon"
+                      class="detail__nav__icon">
+                    <span class="detail__nav__text">
+                      Сертификат
+                    </span>
+                  </a>
+
+                  <button type="button" class="detail__nav__item">
+                    <img loading="lazy" width="22" height="22" src="./images/dest/icons/instruction.svg" alt="icon"
+                      class="detail__nav__icon">
+                    <span class="detail__nav__text">
+                      Руководство
+                      по эксплуатации
+                    </span>
+                  </button>
+
+                  <a href="#" class="detail__nav__item">
+                    <img loading="lazy" width="18" height="22" src="./images/dest/icons/list.svg" alt="icon"
+                      class="detail__nav__icon">
+                    <span class="detail__nav__text">
+                      Опросный лист
+                    </span>
+                  </a>
+                </div>
+              </nav>
+
+              <div class="detail__description">
+                <h3 class="detail__description__title">
+                  Общее описание
+                </h3>
+
+                <div class="detail__description__text__wrapper">
+                  <p class="detail__description__text">
+                    Высоковольтный распределительный шкаф 2КВЭ-6 предназначен для установки на поворотной платформе в
+                    закрытом неотапливаемом кузове карьерных экскаваторов и служит для приема и распределения
+                    электрической энергии трехфазного переменного тока напряжением 6 кВ частотой 50 Гц в карьерных
+                    распределительных сетях с изолированной нейтралью, а также для защиты потребителей электроэнергии
+                    при перегрузках и коротких замыканиях, для оперативного включения электрических цепей управления.
+                  </p>
+
+                  <p class="detail__description__text">
+
+                    2КВЭ-6 изготавливается согласно опросному листу составленного для каждого заказчика индивидуально, с
+                    детальной проработкой как, основного, так и дополнительного оборудования учитывая все пожелания
+                    заказчика.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="detail__gallery no-xs">
+
+        <div class="container">
+          <div class="detail__gallery__inner">
+            <div class="detail__slider" id="detailSlider">
+              <picture decoding="async">
+                <source type="image/webp" srcset="./images/dest/detail/1.webp">
+                <img loading="lazy" width="350" height="250" src="./images/dest/detail/1.png" alt="image"
+                  class="detail__slider__item">
+              </picture>
+
+              <picture decoding="async">
+                <source type="image/webp" srcset="./images/dest/detail/2.webp">
+                <img loading="lazy" width="350" height="250" src="./images/dest/detail/2.png" alt="image"
+                  class="detail__slider__item">
+              </picture>
+
+              <picture decoding="async">
+                <source type="image/webp" srcset="./images/dest/detail/3.webp">
+                <img loading="lazy" width="350" height="250" src="./images/dest/detail/3.png" alt="image"
+                  class="detail__slider__item">
+              </picture>
+
+              <picture decoding="async">
+                <source type="image/webp" srcset="./images/dest/detail/2.webp">
+                <img loading="lazy" width="350" height="250" src="./images/dest/detail/2.png" alt="image"
+                  class="detail__slider__item">
+              </picture>
+            </div>
+
+            <div class="slider__nav detail__gallery__nav">
+              <button type="button" class="slider__arrow slider__arrow--prev" id="detailArrowPrev">
+                <img loading="lazy" width="12" height="8" src="./images/dest/icons/certificates__arrow__prev.svg"
+                  alt="prev">
+              </button>
+              <div class="slider__dots" id="detailNav">
+                <span class="slider__dots__item">
+                </span>
+                <span class="slider__dots__item">
+                </span>
+                <span class="slider__dots__item">
+                </span>
+                <span class="slider__dots__item">
+                </span>
+                <span class="slider__dots__item">
+                </span>
+              </div>
+              <button type="button" class="slider__arrow slider__arrow--next" id="detailArrowNext">
+                <img loading="lazy" width="12" height="8" src="./images/dest/icons/certificates__arrow__next.svg"
+                  alt="next">
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <div class="location section">
+      <div class="address">
+        <div class="container">
+          <div class="address__inner row">
+
+            <div class="address__item col-6 col-md-3">
+              <div class="address__item__wrapper">
+                <img loading="lazy" width="14" height="17" src="./images/dest/icons/flag.svg" alt="icon"
+                  class="address__icon">
+                <div class="address__item__content">
+                  <span class="address__item__text">
+                    г. Магнитогорск
+                  </span>
+
+                  <span class="address__item__text">
+                    ул. Электросети 40А
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="address__item col-6 col-md-3">
+              <div class="address__item__wrapper">
+                <img loading="lazy" width="16" height="16" src="./images/dest/icons/phone__location.svg" alt="icon"
+                  class="address__icon">
+                <div class="address__item__content">
+                  <span class="address__item__text">
+                    Телефон:
+                  </span>
+
+                  <span class="address__item__text">
+                    +7 (3519) 55-01-15
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="address__item col-6 col-md-3">
+              <div class="address__item__wrapper">
+                <img loading="lazy" width="20" height="20" src="./images/dest/icons/clock.svg" alt="icon"
+                  class="address__icon">
+                <div class="address__item__content">
+                  <span class="address__item__text">
+                    Время работы:
+                  </span>
+
+                  <span class="address__item__text">
+                    Пн-Пт: c 8.00 до 17.00
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="address__item col-6 col-md-3">
+              <div class="address__item__wrapper">
+                <img loading="lazy" width="19" height="14" src="./images/dest/icons/email__location.svg" alt="icon"
+                  class="address__icon">
+                <div class="address__item__content">
+                  <span class="address__item__text">
+                    Электронная почта:
+                  </span>
+
+                  <span class="address__item__text">
+                    info@temp-ross.ru
+                  </span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div id="map"></div>
+
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <a href="/" class="footer__logo">
+            <img loading="lazy" width="255" height="78" src="./images/dest/logo__footer.svg" alt="logo">
+          </a>
+          <div class="footer__content">
+            <div class="footer__text__wrapper">
+              <span class="footer__text">
+                Все права защищены © Перепечатка материалов запрещена.
+              </span>
+
+              <span class="footer__text">
+                Ограничение ответственности
+              </span>
+            </div>
+
+            <picture decoding="async">
+              <source type="image/webp" srcset="./images/dest/error__in__text.webp">
+              <img loading="lazy" width="340" height="34" src="./images/dest/error__in__text.png" alt="text"
+                class="footer__error no-md">
+            </picture>
+
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <nav class="footer__nav">
+            <ul class="footer__nav__list">
+              <li class="footer__nav__item">
+                <a href="#" class="footer__nav__link">
+                  Политика конфиденциальности
+                </a>
+              </li>
+
+              <li class="footer__nav__item">
+                <span class="footer__nav__link footer__nav__link--special">
+                  Сайт разработан в компании DESIGN
+                </span>
+              </li>
+            </ul>
+          </nav>
+
+          <picture decoding="async">
+            <source type="image/webp" srcset="./images/dest/error__in__text.webp">
+            <img loading="lazy" width="340" height="34" src="./images/dest/error__in__text.png" alt="text"
+              class="footer__error no-xl md">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="menu" id="menu">
+    <div class="menu__wrapper">
+      <div class="menu__head">
+        <button class="menu__close" type="button" id="closeMenu">
+          <img loading="lazy" width="22" height="22" src="./images/dest/icons/close.svg" alt="x">
+        </button>
+      </div>
+      <div class="menu__body">
+        <div class="menu__body__wrapper row">
+          <div class="menu__body__col col-12 col-md-6">
+            <div class="menu__body__box">
+              <h2 class="menu__body__title">
+                Продукция
+                <img loading="lazy" width="18" height="10" src="./images/dest/icons/menu__arrow.svg" alt="arrow"
+                  class="menu__arrow no-xl xs">
+              </h2>
+              <div class="menu__body__inner row">
+                <div class="menu__body__inner__col col-12 col-md-6">
+                  <div class="menu__body__nav__wrapper">
+                    <nav class="menu__body__nav">
+                      <h3 class="menu__body__nav__title">
+                        РУ 0,4 кВ
+                      </h3>
+                      <ul class="menu__body__nav__list">
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">ПР</span> (пункты распределительные)
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">ШРЭ</span> (шкафы распределения электроэнергии)
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">ВРУ</span> (вводно-распределительные устройства)
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">ЩО</span> (щитки освещения)
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">ЩАО</span> (щитки аварийного освещения)
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">ШУ</span> (шкафы управления)
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">РУСМ</span> (ящики управления электродвигателями)
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">ЩА</span> (щитки автоматики)
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">ПУ</span> (пункты управления)
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+
+                    <nav class="menu__body__nav">
+                      <h3 class="menu__body__nav__title">
+                        РУ 6-10 кВ
+                      </h3>
+                      <ul class="menu__body__nav__list menu__body__nav__list--margin">
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">КСО</span><br>
+                            (камеры сборные одностороннего обслуживания)
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">КРУ</span><br>
+                            (комплектные распределительные устройства)
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="menu__body__inner__col col-12 col-md-6">
+                  <div class="menu__body__nav__wrapper">
+                    <nav class="menu__body__nav">
+                      <h3 class="menu__body__nav__title">
+                        КТП
+                      </h3>
+                      <ul class="menu__body__nav__list">
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Комплектные<br>
+                              трансформаторные<br>
+                              подстанции</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+
+                    <nav class="menu__body__nav">
+                      <h3 class="menu__body__nav__title">
+                        ПКУ
+                      </h3>
+                      <ul class="menu__body__nav__list menu__body__nav__list--margin">
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Пункты коммерческого учёта</span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Реклоузеры</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+
+                    <nav class="menu__body__nav">
+                      <h3 class="menu__body__nav__title">
+                        Электроника
+                      </h3>
+                      <ul class="menu__body__nav__list">
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Электроника</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__body__col col-12 col-md-6">
+
+
+            <div class="menu__body__inner row">
+              <div class="menu__body__inner__col col-12 col-md-6">
+                <div class="menu__body__box">
+                  <h2 class="menu__body__title">
+                    Услуги
+                    <img loading="lazy" width="18" height="10" src="./images/dest/icons/menu__arrow.svg" alt="arrow"
+                      class="menu__arrow no-xl xs">
+                  </h2>
+
+                  <div class="menu__body__nav__wrapper">
+                    <nav class="menu__body__nav">
+                      <ul class="menu__body__nav__list menu__body__nav__list--margin">
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Проектирование<br> электротехнического оборудования</span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Изготовление<br> электрооборудования</span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Электромонтажные и пусконаладочные работы</span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Сервис и ремонт, гарантийный,<br> либо за отдельную оплату</span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Ретрофит (модернизация) существующих электроустановок
+                            </span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">
+                              Металлообработка</span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Электроника</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="menu__body__inner__col col-12 col-md-6">
+
+                <div class="menu__body__box">
+                  <h2 class="menu__body__title">
+                    О компании
+                    <img loading="lazy" width="18" height="10" src="./images/dest/icons/menu__arrow.svg" alt="arrow"
+                      class="menu__arrow no-xl xs">
+                  </h2>
+
+                  <div class="menu__body__nav__wrapper">
+                    <nav class="menu__body__nav">
+                      <ul class="menu__body__nav__list">
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Видео</span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Карьера</span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Вакансии</span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Партнеры и клиенты
+                            </span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Анкета партнера</span>
+                          </a>
+                        </li>
+                        <li class="menu__body__nav__item">
+                          <a href="#" class="menu__body__nav__link">
+                            <span class="bold">Контрагентам</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+
+
+
+
+                </div>
+
+                <div class="menu__body__box menu__body__box--mt">
+                  <h2 class="menu__body__title">
+                    Контакты
+                    <img loading="lazy" width="18" height="10" src="./images/dest/icons/menu__arrow.svg" alt="arrow"
+                      class="menu__arrow no-xl xs">
+                  </h2>
+
+                  <nav class="menu__body__nav">
+                    <ul class="menu__body__nav__list menu__body__nav__list--margin">
+                      <li class="menu__body__nav__item">
+                        <a href="#" class="menu__body__nav__link">
+                          <span class="bold">Контакты</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="chat__bth" id="chatBtn">
+    <span class="chat__bth__content">
+      <img loading="lazy" width="18" height="18" src="./images/dest/icons/headphones.svg" alt="headphones">
+      Онлайн-чат
+    </span>
+  </button>
+
+  <!-- jQuery -->
+  <script src="./js/include/jquery.min.js"></script>
+
+  <!-- jQuery maskedinput -->
+  <!-- <script src="./js/include/jquery.maskedinput.min.js"></script> -->
+
+  <!-- Slick -->
+  <script src="./js/include/slick.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="./js/app.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=cbd57223-f817-4f62-be55-5696e1c14216"
+    type="text/javascript"></script>
+  <script src="./js/map.js"></script>
+</body>
+
+</html>

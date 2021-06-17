@@ -14,29 +14,9 @@
 @import "./blocks/contacts.scss";
 @import "./blocks/location.scss";
 @import "./blocks/footer.scss";
-
-body {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 100%;
-
-  position: relative;
-
-  overflow-x: hidden;
-
-  min-width: 320px;
-
-  color: $dark_blue;
-}
-
-.container {
-  width: 100%;
-  max-width: 1130px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+@import "./blocks/inner.scss";
+@import "./blocks/breadcrumbs.scss";
+@import "./blocks/detail.scss";
 
 @media (max-width: $tablet) {
 }

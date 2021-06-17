@@ -182,4 +182,34 @@ $(document).ready(function () {
       menuBodyBox.addClass("menu__body__box--active");
     }
   });
+
+  $("#detailSlider")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      centerMode: false,
+      autoplay: false,
+      prevArrow: $("#detailArrowPrev"),
+      nextArrow: $("#detailArrowNext"),
+      asNavFor: "#detailNav",
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 1,
+            centerMode: true,
+            centerPadding: "290px",
+          },
+        },
+      ],
+    });
+
+  $("#detailNav").not(".slick-initialized").slick({
+    arrows: false,
+    slidesToShow: 5,
+    asNavFor: "#detailSlider",
+    focusOnSelect: true,
+  });
 });
