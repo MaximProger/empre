@@ -92,6 +92,10 @@
   }
 }
 
+.products__img {
+  max-width: 125px;
+}
+
 @media (max-width: $tablet) {
   .products {
     padding: 92px 0;
