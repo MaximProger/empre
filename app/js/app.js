@@ -107,9 +107,11 @@ $(document).ready(function () {
       ],
     });
 
+  const certificatesNavCount = $("#certificatesNav .slider__dots__item").length;
+
   $("#certificatesNav").not(".slick-initialized").slick({
     arrows: false,
-    slidesToShow: 5,
+    slidesToShow: certificatesNavCount,
     asNavFor: "#certificatesSlider",
     focusOnSelect: true,
   });
@@ -151,12 +153,16 @@ $(document).ready(function () {
       ],
     });
 
+  const parentsNavCount = $("#partnersNav .slider__dots__item").length;
+
   $("#partnersNav").not(".slick-initialized").slick({
     arrows: false,
-    slidesToShow: 5,
+    slidesToShow: parentsNavCount,
     asNavFor: "#partnersSlider",
     focusOnSelect: true,
   });
+
+  console.log(parentsNavCount);
 
   if ($(window).width() <= 991) {
     $("#headerSearchBtn").click((evt) => {
